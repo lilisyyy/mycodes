@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int i,j;
+	printf("将100元换算为5元，10元的所有可能:");
+	printf("\n---------------------------------\n");
+	for(i=0;i<=10;i++)
+	{
+		j = (100-10*i)/5;
+		printf("%d,%d\n",j,i);
+	}
+	
+	
+	return 0;
+}
