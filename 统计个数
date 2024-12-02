@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	char ch;
+	int count1=0,count2=0,count3=0,count4=0;
+	printf("请输入一行字符:\n");
+	while((ch = getchar()) != '\n'){
+		if(ch >= 'A'&&ch <= 'Z' || ch >= 'a'&&ch <= 'z'){
+			count1++;
+		}
+		else if(ch == ' '){
+			count2++;
+		}
+		else if(ch >= '0' && ch <= '9'){
+			count3++;
+		}
+		else{
+			count4++;
+		}
+	}
+	printf("字母个数为:%d\n,空格个数为:%d\n,数字个数为:%d\n,其他字符个数为:%d\n",count1,count2,count3,count4);
+	return 0;
+}
