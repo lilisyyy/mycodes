@@ -1,5 +1,6 @@
 # mycodes
 test
+\\yesorno
 #include<stdio.h>
 int main()
 {
