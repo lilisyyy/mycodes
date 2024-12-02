@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+double Fact(double x,int n)
+{
+	if(n==0)
+	    return 1;
+	else
+	    return Fact(x,n-1)*x;
+}
+void main()
+{
+	int n;
+	double x;
+	printf("请输入x:\n");
+	scanf("%lf",&x);
+	printf("请输入n:\n");
+	scanf("%d",&n);
+	printf("%lf的%d次方为:%lf\n",x,n,Fact(x,n));
+}
