@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int a,i;
+	printf("请输入一个数:");
+	scanf("%d",&a);
+	if(a <= 1)
+	{
+		printf("输入错误");
+	}
+	else
+	{
+			for(i = 2;i < a;i++)
+		{
+			if(a % i == 0){
+				break; 
+			}
+		}if(i < a){
+			printf("该数不是素数");
+		}else{
+			printf("该数是素数");
+		}
+	}
+	return 0;
+}
